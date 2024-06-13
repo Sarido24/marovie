@@ -1,9 +1,9 @@
 export default function Navbar() {
   return (
     <>
-      <div className="navbar w-[95%] justify-evenly m-auto mt-2 rounded-md bg-blue font-poppins text-white">
+      <div className="navbar justify-evenly m-auto mt-2 rounded-md bg-blue font-poppins text-white">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">Marovie</a>
+          <a className="btn btn-ghost text-xl">MAROVIE</a>
         </div>
         <div className="flex-none gap-2">
           <div className="form-control">
