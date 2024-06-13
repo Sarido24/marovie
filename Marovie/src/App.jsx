@@ -4,14 +4,16 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Carousel from "./components/Carousel";
+import Card from "./components/Card";
 
 function App() {
   return (
     <>
-    <div className="w-[90%] m-auto">
+    <div className="m-auto">
 
       <Navbar />
       <Carousel />
+      <Card />
     </div>
     </>
   );

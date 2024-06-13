@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <>
-      <div className="navbar justify-evenly m-auto mt-2 rounded-md bg-blue font-poppins text-white">
+      <div className="navbar justify-evenly m-auto  bg-red font-poppins text-white">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">MAROVIE</a>
         </div>
