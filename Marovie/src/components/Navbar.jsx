@@ -1,9 +1,17 @@
 export default function Navbar() {
   return (
     <>
-      <div className="navbar justify-evenly m-auto  bg-red font-poppins text-white">
-        <div className="flex-1">
-          <a className="btn btn-ghost text-xl">MAROVIE</a>
+      <div className="navbar justify-between m-auto bg-black border-b-2 font-poppins ">
+        <div className="flex justify-between w-[35%]">
+          <div>
+            <a className="btn btn-ghost text-sm md:text-xl lg:text-2xl  text-red">MAROVIE</a>
+          </div>
+          <div className="flex text-white ">
+            <a className="btn btn-ghost nav-hover  text-xs">Popular</a>
+            <a className="btn btn-ghost nav-hover text-xs">Film</a>
+            <a className="btn btn-ghost nav-hover text-xs">Series</a>
+            <a className="btn btn-ghost nav-hover text-xs">My List</a>
+          </div>
         </div>
         <div className="flex-none gap-2">
           <div className="form-control">
@@ -31,6 +39,9 @@ export default function Navbar() {
               tabIndex={0}
               className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
             >
+              <li>
+                <a className="justify-between">Home</a>
+              </li>
               <li>
                 <a className="justify-between">
                   Popular
