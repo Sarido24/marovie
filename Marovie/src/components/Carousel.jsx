@@ -1,10 +1,7 @@
 export default function Carousel() {
   return (
     <>
-      <div className="grid grid-cols-2 mt-10">
-        <div className="flex justify-center items-center text-2xl font-bold font-poppins text-white">
-          <h3>Get out of here, find your Movie !</h3>
-        </div>
+      <div className="container p-10">
         <div className="flex justify-center items-center ">
           <div className="carousel rounded-box w-96">
             <div className="carousel-item w-1/2">

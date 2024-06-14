@@ -1,25 +1,19 @@
 export default function Navbar() {
   return (
     <>
-      <div className="navbar justify-between m-auto bg-black border-b-2 font-poppins ">
+      <div className="navbar h-full w-full justify-between m-auto bg-black border-b-2 border-cyan-950 font-poppins absolute rounded-lg">
         <div className="flex justify-between w-[35%]">
           <div>
             <a className="btn btn-ghost text-sm md:text-xl lg:text-2xl  text-red">MAROVIE</a>
           </div>
-          <div className="flex text-white ">
-            <a className="btn btn-ghost nav-hover  text-xs">Popular</a>
-            <a className="btn btn-ghost nav-hover text-xs">Film</a>
-            <a className="btn btn-ghost nav-hover text-xs">Series</a>
-            <a className="btn btn-ghost nav-hover text-xs">My List</a>
-          </div>
         </div>
-        <div className="flex-none gap-2">
+        <div className=" gap-2">
           <div className="form-control">
             <input
               type="text"
-              p
+              placeholder="Search"
               rounded-mdlaceholder="Search"
-              className="input input-bordered w-24 md:w-auto text-black"
+              className="input border-slate-300 placeholder-slate-400 focus:outline-none focus:ring focus:ring-rose-600 w-30 text-black "
             />
           </div>
           <div className="dropdown dropdown-end text-black">
