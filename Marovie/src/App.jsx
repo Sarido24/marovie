@@ -15,7 +15,6 @@ function App() {
               id="sidebar"
               className="bg-black rounded-lg shadow-xl row-span-3 flex justify-center h-screen sticky top-0"
             >
-              <Carousel />
             </div>
             <div className="bg-black rounded-lg shadow-xl col-span-3 h-24 sticky top-0 z-10">
               <Navbar />
