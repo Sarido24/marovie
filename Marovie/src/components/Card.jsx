@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import ButtonWatch from "./ButtonWatch";
 import axios from "axios";
-let getPopularAPI =
-  "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
+
+let getPopularAPI = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
 let Authorization = "APIKEY"
  
 
@@ -13,10 +13,10 @@ export default function Card() {
     try {
       let response = await axios({
         method: "get",
-        url: getPopularAPI,
+        url: '../../data.json',
         headers: {
           accept: "application/json",
-          Authorization,
+          // Authorization
         },
       });
       if (response.data) {
