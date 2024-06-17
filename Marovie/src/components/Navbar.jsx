@@ -42,6 +42,7 @@ export default function Navbar() {
                 </li>
               </ul>
             </div>
+           
           </div>
 
           <div className="w-full flex flex-col md:hidden items-end justify-end p-10 text-red">
@@ -60,12 +61,38 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className={(isOpen ? "flex justify-end box-border py-0 px-0 mr-1 md:hidden" : "hidden") + ""}>
+      <div
+        className={
+          (isOpen
+            ? "flex justify-end box-border py-0 px-0 mr-1 md:hidden"
+            : "hidden") + ""
+        }
+      >
         <div className="flex flex-col  bg-red w-[20vh] rounded-lg items-s p-4 font-poppins font-light text-sm text-white">
-          <a href="#" className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray">Popular</a>
-          <a href="#" className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray">Genre</a>
-          <a href="#" className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray">My List</a>
-          <a href="#" className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray">Subscribe</a>
+          <a
+            href="#"
+            className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray"
+          >
+            Popular
+          </a>
+          <a
+            href="#"
+            className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray"
+          >
+            Genre
+          </a>
+          <a
+            href="#"
+            className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray"
+          >
+            My List
+          </a>
+          <a
+            href="#"
+            className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray"
+          >
+            Subscribe
+          </a>
         </div>
       </div>
     </>
