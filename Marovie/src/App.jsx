@@ -1,11 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
+import axios from "axios";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Carousel from "./components/Carousel";
 import Card from "./components/Card";
 function App() {
+  let [popular, setPopular] = useState(null);
+
+  async function fetch() {
+    try {
+      let response = await axios({
+        method: "get",
+        url: "../../data.json",
+        headers: {
+          accept: "application/json",
+          // Authorization
+        },
+      });
+      if (response.data) {
+        setPopular(response.data.results);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  useEffect(() => {
+    fetch();
+  }, []);
   return (
     <>
       <div className="m-auto bg-gray">
@@ -30,8 +53,8 @@ function App() {
 
             {/* Content-start*/}
 
-            <section className="bg-black rounded-lg shadow-xl row-span-2 h-[150vh] w-full col-span-3">
-              <Card />
+            <section className="bg-black rounded-lg shadow-xl row-span-2 h-[100vh] lg:h-[150vh] w-full col-span-3">
+              <Card popular={popular} />
               <div className="flex justify-center bg-black ">
                 <div className="join">
                   <button className="join-item btn">1</button>

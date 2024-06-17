@@ -11,7 +11,6 @@ export default function Navbar() {
       setIsOpen(true);
     }
   }
-  console.log(isOpen);
   return (
     <>
       <nav className="flex items-center font-poppins w-full h-full">
