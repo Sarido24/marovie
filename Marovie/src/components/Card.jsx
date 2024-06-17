@@ -3,8 +3,8 @@ import ButtonWatch from "./ButtonWatch";
 import axios from "axios";
 let getPopularAPI =
   "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
-let Authorization =
-  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWRlOTI0ZTc2YWQ2YjBmMGI4NGMxN2MzMTViOGVhMiIsInN1YiI6IjY0YTY2NDY2MDdmYWEyMDExZTAzMDUxMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ua2ZRuzO4A8Bh0FJQNiuovSteFgzds5J2KhM9AlkTus";
+let Authorization = "APIKEY"
+ 
 
 export default function Card() {
   let [popular, setPopular] = useState(null);
