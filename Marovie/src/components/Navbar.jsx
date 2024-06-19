@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faList, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   let [isOpen, setIsOpen] = useState(false);
@@ -16,12 +17,12 @@ export default function Navbar() {
       <nav className="flex items-center font-poppins w-full h-full">
         <div className="flex justify-between items-center w-full">
           <div className="flex items-center text-red uppercase p-10 gap-10">
-            <a
+            <Link
               className="decoration-neutral font-bold text-sm md:text-2xl "
-              href="#"
+              to={'/'}
             >
               marovie
-            </a>
+            </Link>
             <div className="hidden md:flex text-sm cursor-pointer">
               <ul className="flex text-white w-full p-10 gap-5 ">
                 <li className="hover:text-gray duration-500 active:text-rose-200">
