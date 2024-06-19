@@ -26,19 +26,19 @@ export default function Navbar() {
             <div className="hidden md:flex text-sm cursor-pointer">
               <ul className="flex text-white w-full p-10 gap-5 ">
                 <li className="hover:text-gray duration-500 active:text-rose-200">
-                  <a className="decoration-neutral" href="">
+                  <Link to="/" className="decoration-neutral" href="">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="hover:text-gray duration-500 active:text-rose-200">
-                  <a className="decoration-neutral" href="">
-                    Popular
-                  </a>
-                </li>
-                <li className="hover:text-gray duration-500 active:text-rose-200">
-                  <a className="decoration-neutral" href="">
+                  <Link to="/genre" className="decoration-neutral" href="">
                     Genre
-                  </a>
+                  </Link>
+                </li>
+                <li className="hover:text-gray duration-500 active:text-rose-200">
+                  <Link to="/favorite" className="decoration-neutral" href="">
+                    Favorite
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -69,24 +69,24 @@ export default function Navbar() {
         }
       >
         <div className="flex flex-col  bg-red w-[20vh] rounded-lg items-s p-4 font-poppins font-light text-sm text-white">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray"
           >
-            Popular
-          </a>
-          <a
-            href="#"
+            Home
+          </Link>
+          <Link
+            to="/genre"
             className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray"
           >
             Genre
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/favorite"
             className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray"
           >
-            My List
-          </a>
+            Favorite
+          </Link>
           <a
             href="#"
             className="hover:bg-black rounded-lg p-1 transition-colors duration-500 active:bg-gray"
