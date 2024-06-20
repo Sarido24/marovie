@@ -47,6 +47,7 @@ export default function Navbar() {
         setLoading(false);
       }
     } else {
+      setSearchMovie()
       setLoading(false)
       navigate("/");
       navigate(0)
@@ -55,7 +56,7 @@ export default function Navbar() {
   
   function refreshPage(){
     if(searchMovie){
-      window.location.reload(); 
+      navigate(0)
     }
   }
 
@@ -73,9 +74,9 @@ export default function Navbar() {
             >
               marovie
             </Link>
-            <div className="w-20 md:w-full text-[8px] md:text-xs">
-              <form action="" className="flex gap-2 h-5 w-15 justify-center items-center">
-                <input className="w-15 md:w-full px-1 py-1"
+            <div className="w-20 ml-4 md:w-full text-[8px] md:text-xs">
+              <form action="" className="flex gap-1 h-5 w-12 justify-center items-center">
+                <input className="px-1 py-1"
                   type="text"
                   placeholder="search"
                   onChange={(e) => {

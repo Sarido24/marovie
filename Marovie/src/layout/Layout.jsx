@@ -12,21 +12,21 @@ function Layout() {
 
   return (
     <>
-      <div className="m-auto bg-gray">
+      <div className="m-auto">
         <div className="min-h-screen items-center">
           <div className="flex flex-col md:grid md:grid-cols-4 gap-1 w-full">
             {/* sidebar-start */}
 
             <section
               id="sidebar"
-              className="bg-black hidden md:flex md:justify-center rounded-lg shadow-xl md:row-span-3 h-screen sticky top-0"
+              className=" hidden border-r-2 border-red md:flex md:justify-center rounded-lg shadow-xl md:row-span-3 h-screen sticky top-0"
             ></section>
 
             {/* sidebar-end */}
 
             {/* Navbar-start */}
 
-            <nav className="block bg-black rounded-lg shadow-xl md:col-span-3 h-24 sticky top-0 z-10">
+            <nav className="block border-b-2 bg-black border-red rounded-lg shadow-xl md:col-span-3 h-24 sticky top-0 z-10">
               <Navbar />
             </nav>
 
@@ -35,7 +35,7 @@ function Layout() {
 
             {/* Content-start*/}
 
-            <section className="bg-black rounded-lg shadow-xl row-span-2 h-[100vh] lg:h-[150vh] w-full col-span-3">
+            <section className=" rounded-lg shadow-xl row-span-2 h-[100vh] lg:h-[150vh] w-full col-span-3">
             <Outlet />
             </section>
 

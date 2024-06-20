@@ -8,7 +8,7 @@ export default function Home(){
   const popularAPI = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1'
 const Authorization = 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWRlOTI0ZTc2YWQ2YjBmMGI4NGMxN2MzMTViOGVhMiIsInN1YiI6IjY0YTY2NDY2MDdmYWEyMDExZTAzMDUxMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ua2ZRuzO4A8Bh0FJQNiuovSteFgzds5J2KhM9AlkTus'
 
-    let [popular, setPopular] = useState(null);
+    const {popular, setPopular} = useContext(MyContext);
     const {searchMovie, setSearchMovie} = useContext(MyContext)
     const {searchInput, setSearchInput} = useContext(MyContext)
     const {loading, setLoading} = useContext(MyContext)
