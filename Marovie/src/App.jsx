@@ -1,13 +1,21 @@
 import "./App.css";
+import { useState, React } from "react";
+import { MyContext } from "./context";
 import { RouterProvider } from "react-router-dom";
-import router from "../src/router"
+import router from "../src/router";
 
 function App() {
-
-
+  const [text, setText] = useState("");
+  const [movie, setMovie] = useState(null)
+  const [searchMovie, setSearchMovie] = useState(null)
+  const [loading, setLoading] = useState(false)
+  const [searchInput, setSearchInput] = useState("")
   return (
     <>
-            <RouterProvider router={router} />
+      <MyContext.Provider value={{ text, setText, searchInput, setSearchInput, searchMovie, setSearchMovie, loading, setLoading }} >
+        <RouterProvider router={router} />
+        
+      </MyContext.Provider>
     </>
   );
 }

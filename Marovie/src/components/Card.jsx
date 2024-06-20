@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useStat, useContext } from "react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -13,7 +13,7 @@ export default function Card({movies}) {
   return (movies?.length &&
 
     <>
-      <div className=" grid grid-cols-3  lg:grid-cols-5 w-full  bg-black gap-8 p-10 rounded-lg">
+      <div  className=" grid grid-cols-3  lg:grid-cols-5 w-full  bg-black gap-8 p-10 rounded-lg">
         {movies.slice(0, 15).map((el, index)=>{
           return <>
           <div onClick={()=>{
@@ -21,7 +21,7 @@ export default function Card({movies}) {
           }} className="card bg-gray h-24 sm:h-36  lg:h-60 shadow-md shadow-red trnasition  hover:transition-transform hover:scale-105 duration-500 hover:duration-500" key={index}>
           <figure className="px-0 pt-0">
             <img
-              src={`https://image.tmdb.org/t/p/w500/${el.poster_path}`}
+              src={`https://image.tmdb.org/t/p/original${el.poster_path}`}
               alt="Shoes"
               className="rounded-xl h-full w-full "
             />

@@ -3,7 +3,7 @@ export default function Detail(){
         <>
         <div className="w-full h-full  text-gray flex flex-col py-2 lg:py-10 items-center text-xs lg:text-2xl gap-4 font-poppins">
         <img className="object-cover w-[100vh] h-[70vh] shadow-lg shadow-red rounded-lg"
-          src="https://image.tmdb.org/t/p/w500/stKGOm8UyhuLPR9sZLjs5AkmncA.jpg"
+          src="https://image.tmdb.org/t/p/original/stKGOm8UyhuLPR9sZLjs5AkmncA.jpg"
           alt=""
         />
         <div className="flex flex-col gap-5 justify-start shadow-lg p-20">
