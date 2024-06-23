@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect,useContext } from "react";
 import axios from "axios";
 import { Outlet } from "react-router-dom";
 
@@ -7,8 +7,14 @@ import viteLogo from "/vite.svg";
 import Navbar from "../components/Navbar"
 // import Carousel from "./components/Carousel";
 import Card from "../components/Card";
+import Loading from "../components/Loading";
+import { MyContext } from "../context";
+
+
 
 function Layout() {
+  const {loading, setLoading} = useContext(MyContext)
+  const {error, setError} = useContext(MyContext)
 
   return (
     <>
@@ -35,7 +41,7 @@ function Layout() {
 
             {/* Content-start*/}
 
-            <section className=" rounded-lg shadow-xl row-span-2 h-[100vh] lg:h-[150vh] w-full col-span-3">
+            <section className=" rounded-lg shadow-xl row-span-2 h-[100vh] md:h-[200vh] lg:h-[150vh] w-full col-span-3">
             <Outlet />
             </section>
 
