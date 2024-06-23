@@ -28,7 +28,6 @@ export default function Navbar() {
 
   async function handleSearch(e) {
     e.preventDefault();
-    console.log("ini jalan");
     setLoading(true);
     let searchUrl;
     try {

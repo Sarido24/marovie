@@ -20,7 +20,7 @@ export default function Card({ id,poster_path }) {
     >
       <figure className="px-0 pt-0">
         <img
-          src={`https://image.tmdb.org/t/p/original${poster_path}`}
+          src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
           alt="Shoes"
           className="rounded-xl h-full w-full "
         />
