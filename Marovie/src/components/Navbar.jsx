@@ -116,11 +116,7 @@ export default function Navbar() {
                     Home
                   </Link>
                 </li>
-                <li className="hover:text-gray duration-500 active:text-rose-200">
-                  <Link to="/genre" className="decoration-neutral">
-                    Genre
-                  </Link>
-                </li>
+
                 <li className="hover:text-gray duration-500 active:text-rose-200">
                   <Link to="/favorite" className="decoration-neutral">
                     Favorite

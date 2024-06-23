@@ -29,6 +29,7 @@ export default function Home() {
       });
       if (response.data) {
         setPopular(response.data.results);
+        console.log(response.data);
       }
     } catch (error) {
       console.log(error);
@@ -49,9 +50,9 @@ export default function Home() {
       <div className="grid grid-cols-3  lg:grid-cols-5 w-full  bg-black gap-8 p-10 rounded-lg">
 
           {searchMovie ? ( searchMovie?.map((el, index) => {
-            return <Card poster_path={el.poster_path} id={el.id} key={index} />;
-          })) : ( popular?.map((el, index) => {
-            return <Card poster_path={el.poster_path} id={el.id} key={index} />;
+            return <Card poster_path={el.poster_path} id={el.id} title={el.title} key={index} />;
+          })) : ( popular?.slice(0, 15).map((el, index) => {
+            return <Card poster_path={el.poster_path} id={el.id} title={el.title} key={index} />;
           })) }
       </div>
 
