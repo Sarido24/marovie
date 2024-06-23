@@ -29,7 +29,7 @@ export default function Home() {
       });
       if (response.data) {
         setPopular(response.data.results);
-        console.log(response.data);
+        // console.log(response.data);
       }
     } catch (error) {
       console.log(error);
@@ -51,7 +51,7 @@ export default function Home() {
 
           {searchMovie ? ( searchMovie?.map((el, index) => {
             return <Card poster_path={el.poster_path} id={el.id} title={el.title} key={index} />;
-          })) : ( popular?.slice(0, 15).map((el, index) => {
+          })) : ( popular?.map((el, index) => {
             return <Card poster_path={el.poster_path} id={el.id} title={el.title} key={index} />;
           })) }
       </div>

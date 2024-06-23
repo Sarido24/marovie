@@ -126,7 +126,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="w-full flex flex-col md:hidden items-end justify-end p-10 text-red">
+          <div className="w-full flex flex-col md:hidden items-end justify-end py-10 px-5 text-red">
             <div>
               <FontAwesomeIcon
                 icon={faList}

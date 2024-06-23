@@ -28,7 +28,7 @@ export default function GenreList() {
           Authorization,
         },
       });
-      console.log(response.data);
+    //   console.log(response.data);
 
       if(response.data){
         setGenreList(response.data)
@@ -72,7 +72,7 @@ export default function GenreList() {
     }
   }
 
-  console.log(genreMovies);
+//   console.log(genreMovies);
 
   useEffect(()=>{
     fetchGenreList()
