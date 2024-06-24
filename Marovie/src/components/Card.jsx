@@ -23,7 +23,7 @@ export default function Card({ id,poster_path, title }) {
         <img
           src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
           alt={`${title} image is not found , click to see the detail `}
-          className="rounded-xl text-xs md:text-lg h-full w-full p-1 text-red "
+          className="rounded-xl text-xs md:text-lg h-full w-full p-1 text-red"
         />
       </figure>
       {/* <div  className="card-body text-white items-center text-center bottom-[25%] mx-auto absolute inset-x-0">

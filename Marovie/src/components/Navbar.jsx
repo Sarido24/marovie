@@ -63,7 +63,7 @@ export default function Navbar() {
 
   function refreshPage() {
     if (searchMovie) {
-      navigate(0);
+      setSearchMovie(null)
     }
   }
 

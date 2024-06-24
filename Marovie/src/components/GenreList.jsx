@@ -57,7 +57,7 @@ export default function GenreList() {
           if(response.data){
             setGenreMovies(response.data)
             setSearchMovie(response.data.results)
-            if(location.pathname === '/genre'){
+            if(location.pathname === '/genre' || location.pathname === '/favorite'){
                 navigate('/')
             }
         

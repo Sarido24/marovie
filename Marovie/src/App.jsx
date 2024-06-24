@@ -12,8 +12,9 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [searchInput, setSearchInput] = useState("");
   const [error, setError] = useState(false);
-  const [genreList, setGenreList] = useState(false);
-  const [genreMovies, setGenreMovies] = useState(false);
+  const [genreList, setGenreList] = useState(null);
+  const [genreMovies, setGenreMovies] = useState(null);
+  const [favorites, setFavorites] = useState([]);
   return (
     <>
       <MyContext.Provider
@@ -34,6 +35,8 @@ function App() {
           setGenreList,
           genreMovies, 
           setGenreMovies,
+          favorites, 
+          setFavorites
         }}
       >
         <RouterProvider router={router} />
